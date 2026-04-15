@@ -9,7 +9,7 @@
     <h1>Blogs</h1>
     <ul>
         {% for x in blogs %}
-            <li onclick="window.location='details/{{x.id}}'">{{ x.firstname }} {{x.lastname}}</li>
+            <li onclick="window.location='details/{{x.slug}}'">{{ x.firstname }} {{x.lastname}}</li>
         {% endfor %}
     </ul>
 </div>
