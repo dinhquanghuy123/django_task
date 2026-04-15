@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Details about {{ myblog.firstname }}  {{ myblog.lastname }}
+{% endblock %}
+{% block content %}
+<div class="mycard">
+    <h1>{{ myblog.firstname }}  {{ myblog.lastname }}</h1>
+
+    <p>Phone: {{myblog.phone}}</p>
+    <p>Blog since: {{ myblog.joined_date }}</p>
+
+    <p>Back to <a href="/blog/">Blog</a></p>
+</div>
+{% endblock %}

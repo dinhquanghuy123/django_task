@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title%}
+    BLOGS
+{% endblock %}
+{% block content%}
+<div class="mycard">
+    <p><a href="/">HOME</a></p>
+    <h1>Blogs</h1>
+    <ul>
+        {% for x in blogs %}
+            <li onclick="window.location='details/{{x.id}}'">{{ x.firstname }} {{x.lastname}}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
